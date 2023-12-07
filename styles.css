@@ -79,6 +79,129 @@ html{
     animation-delay: 2.5s;
 }
 
+.person-name{
+    margin-top: 11rem;
+}
+
+.stacks-content{
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 6rem;
+}
+
+.stacks-content h3{
+    color: var(--color-white);
+    font-size: 1.7rem;
+    margin-left: 20px;
+
+}
+
+.stacks{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.stacks ul li{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 5px;
+    padding: 5px;
+    list-style: none;
+
+}
+
+.stacks ul li img{
+    width: 40px;
+    height: auto;
+    transition: transform .3s ease;
+}
+
+.stacks ul li img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.stacks ul li div:hover::after{
+    content: attr(data);
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    color: var(--color-white);
+}
+
+.person-background{
+    height: 100vh;
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+    flex-direction: column;
+    background-image: url(./img/img1.jpg);
+    background-size: cover;
+    background-position: top center;
+    z-index: 1;
+}
+
+.person-background::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .7;
+    z-index: -1;
+    background: 
+    linear-gradient(270deg, transparent 10%, var(--color-black)),
+    linear-gradient(180deg, transparent 80%, var(--color-black)),
+    linear-gradient(0deg, transparent 80%, var(--color-black));
+
+}
+
+.wrapper-profile-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    margin: 20px 15px;
+    border-radius: 50%;
+    background: 
+    radial-gradient(rgba(00,0,0,0.15) 60%, transparent 0),
+    radial-gradient(#0c0c0c 60%, transparent 0),
+    linear-gradient(to top right, #cc00ff 0%, var(--color-pink) 100%)
+    ;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    background-color: #3b3333;
+}
+
+.links a img{
+    width: 30px;
+    height: 20px;
+    margin: 10px;
+    filter: brightness(.8);
+    transition: .1s ease;
+}
+
+.links a img:hover{
+    transform: scale(1.20);
+    filter: brightness(1);
+    
+}
+
+/* Final da primeira página */
+
 @keyframes written_text {
     100% {
         color:var(--color-white);
