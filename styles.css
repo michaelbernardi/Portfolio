@@ -162,8 +162,8 @@ html{
     z-index: -1;
     background: 
     linear-gradient(270deg, transparent 10%, var(--color-black)),
-    linear-gradient(180deg, transparent 80%, var(--color-black)),
-    linear-gradient(0deg, transparent 80%, var(--color-black));
+    linear-gradient(.5turn, transparent 30%, var(--color-black)),
+    linear-gradient(1turn, transparent 65%, var(--color-black))
 
 }
 
@@ -201,6 +201,181 @@ html{
 }
 
 /* Final da primeira página */
+
+#about {
+    height: 100vh;
+    width: 100%;
+    background: var(--color-black);
+    display: flex;
+    color: var(--color-white);
+}
+
+.background-about{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.img-wrapper::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+    linear-gradient(.25turn, transparent 30%, var(--color-black)),
+    linear-gradient(.5turn, transparent 30%, var(--color-black)),
+    linear-gradient(1turn, transparent 65%, var(--color-black))
+;
+}
+
+.img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box-about{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 3rem;
+}
+
+.section-subtitle h2 p{
+    display: inline-block;
+    font-size: 3rem;
+}
+
+.section-subtitle h2 p:nth-child(2) span{
+    padding: 3px 5px;
+    border-radius: 4px;
+    color: var(--color-black);
+    background: var(--color-pink);
+}
+
+.box-about h3{
+    margin: 3rem;
+
+}
+
+.box-about h3 p{
+    display: inline-block;
+    width: fit-content;
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: var(--color-black);
+    background: var(--color-pink);
+}
+
+.box-about h4{
+    margin: 1rem 3rem;
+    font-size: 1.5rem;
+}
+
+.box-about h4 p{
+    display: inline;
+    padding: 2px 4px;
+    color: var(--color-pink);
+    font-size: bold;
+    font-size: 1.75rem;
+}
+
+.button-cta{
+    display: flex;
+    max-width: 198px;
+    margin: 4rem 3rem;
+}
+
+.button-cta button{
+    display: inline-block;
+    width: 100%;
+    max-width: 172px;
+    padding: 10px;
+    margin: 3rem;
+    font-family: 'Nunito';
+    font-weight: 700;
+    border-radius: 10px;
+    background: var(--color-pink);
+    cursor: pointer;
+}
+
+.button-cta button:hover{
+    transition: all .3s ease;
+    filter: brightness(.8);
+}
+
+/* Final do Sobre */
+
+#projects{
+    height: 100vh;
+    width: 100%;
+    background: var(--color-black);
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-title h2{
+    margin: 3rem;
+    padding: 1rem;
+    font-size: 3rem;
+    color: var(--color-white);
+}
+
+.wrapper-projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 500px;
+    margin-top: 2rem;
+}
+
+.card-project{
+    width: 320px;
+    height: 450px;
+    padding: 30px 20px 20px;
+    margin: 0px 30px;
+    position: relative;
+    background: var(--color-white);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.card-project::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40%;
+    width: 100%;
+    background: var(--color-purple);
+    border-radius: 20px 20px 0px 0px;
+}
+
+.content-project{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.img-project{
+    
+}
 
 @keyframes written_text {
     100% {
