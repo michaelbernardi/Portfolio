@@ -274,6 +274,7 @@ body {
 .stacks-content h3 {
   color: var(--color-white);
   font-size: calc(.90vw + .5rem);
+  font-size: 3rem;
 
   margin-left: 20px;
 }
@@ -291,7 +292,7 @@ body {
 
   position: relative;
 
-  margin: 15px;
+  margin: 10px;
   padding: 15px;
 
   list-style: none;
@@ -320,7 +321,7 @@ body {
   height: 20px;
 
   color: var(--color-white);
-  font-size: 1.25vh;
+  font-size: 2vh;
 }
 
 /* sm */
